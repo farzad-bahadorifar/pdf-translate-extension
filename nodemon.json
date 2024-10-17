@@ -1,0 +1,4 @@
+{
+  "watch": ["content.mjs"],
+  "ext": "js,mjs"
+}

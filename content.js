@@ -1,7 +1,7 @@
-import * as pdfjsLib from './pdfjs/pdf.mjs';
+import * as pdfjsLib from './pdf.mjs';
 
 // Set the workerSrc to the correct path for the worker
-pdfjsLib.GlobalWorkerOptions.workerSrc = chrome.runtime.getURL('pdfjs/pdf.worker.mjs');
+pdfjsLib.GlobalWorkerOptions.workerSrc = chrome.runtime.getURL('pdf.worker.mjs');
 
 // Load and process a PDF file
 const loadingTask = pdfjsLib.getDocument('example.pdf');
